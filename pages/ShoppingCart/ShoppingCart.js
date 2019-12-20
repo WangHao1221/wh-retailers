@@ -53,7 +53,7 @@ Page({
     }
   },
   // 商品详情
-  toDetail: function () {
+  toDetail: function (e) {
     console.log("商品详情页");
   },
 

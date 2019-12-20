@@ -30,10 +30,10 @@
       <!-- 循环商品列表 -->
       <block wx:key="key{{goods_car_index}}" wx:for="{{goodsCar}}">
         <view class='has_shop_item' data-index='{{index}}' bindtap="toDetail">
-          <movable-area class='movable' bindtouchstart="touchS" bindtouchmove="touchM" data-index='{{index}}' bindtap="toDetail">
+          <movable-area class='movable'>
             <movable-view direction="horizontal" class='movable-view' out-of-bounds="true" damping="100" animation="true">
-              <view class='has_shop_item' bindtouchstart="touchS" bindtouchmove="touchM" data-index='{{index}}' bindtap="toDetail">
-                <view class="has_shop_item_content">
+              <view class='has_shop_item'>
+                <view class="has_shop_item_content" data-index='{{index}}' bindtouchstart="touchS" bindtouchmove="touchM">
                   <!-- 判断是否为选中状态 -->
                   <view class='img_icon_ischeck' wx:if="{{!item.selected}}" bindtap='selectShop' data-index='{{index}}'></view>
                   <view class='position_shop_circlechecked' wx:else data-index='{{index}}' bindtap='selectShop'>
@@ -65,7 +65,7 @@
                     </view>
                   </view>
                 </view>
-                <view class='btn_delete_shop' wx:if="{{item.isCanDelete}}" bindtap='deteleGood' data-index='{{index}}'>删除</view>
+                <view class='btn_delete_shop' wx:if="{{item.isCanDelete}}" catchtap='deteleGood' data-index='{{index}}'>删除</view>
               </view>
             </movable-view>
           </movable-area>
