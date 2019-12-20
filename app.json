@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/ShoppingCart/ShoppingCart",
+    "pages/classification/classification",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0099FF",
+    "navigationBarTitleText": "便宜购",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#0099FF",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home_fill.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/icon/fenlei.png",
+        "selectedIconPath": "images/icon/fenlei_fill.png",
+        "pagePath": "pages/classification/classification",
+        "text": "分类"
+      },
+      {
+        "iconPath": "images/icon/cart.png",
+        "selectedIconPath": "images/icon/cart_fill.png",
+        "pagePath": "pages/ShoppingCart/ShoppingCart",
+        "text": "购物车"
+      },
+      {
+        "iconPath": "images/icon/mine.png",
+        "selectedIconPath": "images/icon/mine_fill.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,334 @@
+/**app.wxss**/
+page,
+.container {
+  height: 100%;
+  background:rgba(255,255,255,1);
+} 
+.no_shop{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.no_shop_only{
+  width: 380rpx;
+  height: 333rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shop_show_only{
+  width: 380rpx;
+  height: 191rpx;
+}
+.on_shop_txt{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(127,131,137,1);
+  line-height:40rpx;
+  margin-top: 18rpx;
+}
+.btn_return{
+  width: 250rpx;
+  height: 60rpx;
+  margin-top: 24rpx;
+  border-radius:30rpx;
+  border:1px solid rgba(214,70,60,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt_btn_return{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(214,70,60,1);
+  line-height:42px;
+}
+
+.has_shop{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background:rgba(255,255,255,1);
+}
+.has_shop_title{
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 3rpx solid rgba(248,248,248,1);
+  z-index: 99;
+}
+.position_title{
+  width: 650rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.has_shop_circleunchecked{
+  width:29rpx;
+  height:29rpx;
+  border:1rpx solid rgba(151,151,151,1);
+  border-radius: 50%;
+  margin: 0 30rpx;
+}
+.has_shop_circlechecked1{
+  width:32rpx;
+  height:32rpx;
+}
+.has_shop_circlechecked{
+  width:32rpx;
+  height:32rpx;
+  margin: 0 30rpx 0 30rpx;
+}
+.has_shop_icon1{
+  width: 32rpx;
+  height: 29rpx;
+}
+.has_shop_smalltxt{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:40rpx;
+}
+.btn_shop_change{
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(85,141,247,1);
+  line-height:33rpx;
+}
+.has_shop_list{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.has_shop_item{
+  width: 100%;
+  height: 230rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.has_shop_item_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_icon_ischeck{
+  width:32rpx;
+  height:32rpx;
+  border:1rpx solid rgba(151,151,151,1);
+  border-radius: 50%;
+  margin: 0 30rpx;
+}
+.shop_img{
+  width: 200rpx;
+  height: 200rpx;
+}
+.icon_vip{
+  position: absolute;
+  width: 38rpx;
+  height: 30rpx;
+  top: 115rpx;
+  left: 92rpx;
+}
+.menu_right_txt{
+  box-sizing: border-box;
+  flex: 1;
+  height: 200rpx;
+  padding: 30rpx 15rpx;  
+  line-height:30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu_right_name,
+.menu_right_nameDes{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.menu_right_nameDes{
+  font-size: 28rpx;
+  color:rgba(51,51,51,.6);
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.menu_right_lable{
+  width: 50rpx;
+  height: 50rpx;
+  background:rgba(214,70,60,1);
+  border-radius: 25rpx;
+  font-size:20rpx;
+  color:rgba(255,255,255,1);
+  text-align: center;
+  line-height: 50rpx;
+}
+.menu_right_down{
+  display: flex;
+  align-items: center;
+  line-height:42rpx;
+  justify-content: space-between;
+}
+.menu_right_nprice{
+  font-size:30rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(214,70,60,1);
+}
+.menu_right_oprice{
+  font-size:20rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(185,189,185,1);
+  text-decoration:line-through;
+  padding-top: 14rpx;
+}
+.menu_right_shopcar{
+  width: 38rpx;
+  height: 38rpx;
+  float: right;
+}
+.position_hasshop_item{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 15rpx;
+}
+.btn_delete_shop{
+  width: 100rpx;
+  height: 230rpx;
+  background:rgba(235,84,77,1);
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height:33rpx;
+}
+.position_hasshop_img{
+  width: 200rpx;
+  height: 200rpx; 
+}
+.has_shop_num{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn_sub{
+  width: 28rpx;
+  height: 28rpx;
+}
+.btn_add{
+  width: 28rpx;
+  height: 28rpx;
+}
+.goods_num{
+  font-size:32rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  margin: 0 16rpx 0 16rpx; 
+}
+.shop_car_total{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:rgba(255,255,255,1);
+}
+.car_total_left{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+.total_txt{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:40rpx;
+}
+.shop_total_right{
+  height: 100rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.shop_total_freight{
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.total_name{
+  font-size: 28rpx;
+  color:rgba(51,51,51,1);
+}
+.total_name_num{
+  font-size:28rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;  
+  line-height:40rpx;
+  color: #D6463C;
+}
+.total_freight{
+  font-size:24rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+  line-height:33rpx;
+}
+.position_total{
+  display: flex;
+  flex-direction: row;
+}
+.position_total_freight{
+  display: flex;
+}
+.shop_total_freight{
+  margin-right: 30rpx;
+}
+.btn_detele_all_red{
+   width: 220rpx;
+  height: 100rpx;
+  background:rgba(235,84,77,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:30rpx;
+  font-family:PingFangSC-Medium;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:42rpx;
+}
+.position_shop_circlechecked{
+  width: 32rpx;
+  height: 32rpx;
+  margin:0 30rpx 0 30rpx;
+}

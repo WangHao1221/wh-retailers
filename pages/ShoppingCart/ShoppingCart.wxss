@@ -1,0 +1,18 @@
+/* pages/ShoppingCart/ShoppingCart.wxss */
+.has_shop_list{
+  width: 100%;
+  min-height: 100%;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.movable,
+.movable-view{
+  width: 100%;
+  height: 100%;
+}
+.menu_right_txt{
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  margin-right: 40rpx;
+}

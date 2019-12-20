@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='has_shop_list'>
+      <!-- 循环商品列表 -->
+      <block wx:key="key{{goods_car_index}}" wx:for="{{goods}}">
+        <view class='position_hasshop_item' bindtap="toDetail">
+            <view class='position_hasshop_img'>
+              <!-- 商品图片 -->
+              <image class='shop_img' src='{{item.imgGood}}'></image>
+            </view>
+            <view class='menu_right_txt'>
+              <!-- 商品名称和描述 -->
+              <text class='menu_right_name'>{{item.nameGood}}</text>
+              <text class='menu_right_nameDes'>{{item.nameDes}}</text>
+              <view class='menu_right_down'>
+                <!-- 商品最新价格 -->
+                <text class='menu_right_nprice'>¥{{item.npriceGood}}</text>
+                <!-- 商品以往价格 -->
+                <text class='menu_right_oprice'>{{item.opriceGood}}</text>
+                <view class='has_shop_num'>
+                  <!-- 加入购物车 -->
+                  <image class='btn_addCart' src='../../images/addCart.png' bindtap='addCart' data-item='{{item}}'></image>
+                </view>
+              </view>
+            </view>
+          </view>
+      </block>
+    </view>
+</view>

@@ -1,0 +1,98 @@
+<!--pages/ShoppingCart/ShoppingCart.wxml-->
+<view class="container">
+  <view class='no_shop' wx:if="{{carisShow}}">
+    <view class='no_shop_only'>
+      <image class='shop_show_only' src='../../images/03gouwuche_kong.png'></image>
+      <text class='on_shop_txt'>购物车空空如也</text>
+      <navigator url="/pages/index/index" open-type='switchTab' hover-class="none">
+        <view class='btn_return'>
+          <text class='txt_btn_return'>去首页逛逛吧</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class='has_shop' wx:else>
+    <!-- 第一排 -->
+    <view class='has_shop_title'>
+      <view class='position_title'>
+        <view class='has_shop_circleunchecked' wx:if="{{!isCheckedAll}}" bindtap='checkAll'></view>
+        <view class='position_shop_circlechecked' wx:else bindtap='checkAll'>
+          <image class='has_shop_circlechecked1' src='../../images/03gouwuche_gou.png'></image>
+        </view>
+        <image class='has_shop_icon1' src='../../images/03gouwuche_icon_dianpu.png'></image>
+        <text class='has_shop_smalltxt'>喜来登超市(配送/自提)</text>
+      </view>
+      <text class='btn_shop_change' wx:if="{{isEdit}}" bindtap='editGood'>编辑</text>
+      <text class='btn_shop_change' wx:else bindtap='editComplete'>完成</text>
+    </view>
+    <!-- 循环的商品列表 -->
+    <view class='has_shop_list'>
+      <!-- 循环商品列表 -->
+      <block wx:key="key{{goods_car_index}}" wx:for="{{goodsCar}}">
+        <view class='has_shop_item' data-index='{{index}}' bindtap="toDetail">
+          <movable-area class='movable' bindtouchstart="touchS" bindtouchmove="touchM" data-index='{{index}}' bindtap="toDetail">
+            <movable-view direction="horizontal" class='movable-view' out-of-bounds="true" damping="100" animation="true">
+              <view class='has_shop_item' bindtouchstart="touchS" bindtouchmove="touchM" data-index='{{index}}' bindtap="toDetail">
+                <view class="has_shop_item_content">
+                  <!-- 判断是否为选中状态 -->
+                  <view class='img_icon_ischeck' wx:if="{{!item.selected}}" bindtap='selectShop' data-index='{{index}}'></view>
+                  <view class='position_shop_circlechecked' wx:else data-index='{{index}}' bindtap='selectShop'>
+                    <image class='has_shop_circlechecked1' src='../../images/03gouwuche_gou.png'></image>
+                  </view>
+                  <view class='position_hasshop_item'>
+                    <view class='position_hasshop_img'>
+                      <!-- 商品图片 -->
+                      <image class='shop_img' src='{{item.imgGood}}'></image>
+                      <image class='icon_vip' src='../../images/vip.png'></image>
+                    </view>
+                    <view class='menu_right_txt'>
+                      <!-- 商品名称和描述 -->
+                      <text class='menu_right_name'>{{item.nameGood}}</text>
+                      <text class='menu_right_nameDes'>{{item.nameDes}}</text>
+                      <view class='menu_right_down'>
+                        <!-- 商品最新价格 -->
+                        <text class='menu_right_nprice'>¥{{item.npriceGood}}</text>
+                        <!-- 商品以往价格 -->
+                        <text class='menu_right_oprice'>{{item.opriceGood}}</text>
+                        <view class='has_shop_num'>
+                          <!-- 商品数量减少按钮 -->
+                          <image class='btn_sub' src='../../images/jian.png' bindtap='subNum' data-index='{{index}}'></image>
+                          <text class='goods_num'>{{item.count}}</text>
+                          <!-- 增加商品数量按钮 -->
+                          <image class='btn_add' src='../../images/jia.png' bindtap='addNum' data-index='{{index}}'></image>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+                <view class='btn_delete_shop' wx:if="{{item.isCanDelete}}" bindtap='deteleGood' data-index='{{index}}'>删除</view>
+              </view>
+            </movable-view>
+          </movable-area>
+        </view>
+      </block>
+    </view>
+    <!-- 底部选择栏 -->
+    <view class='shop_car_total'>
+      <view class='car_total_left'>
+        <view class='has_shop_circleunchecked' wx:if="{{!isCheckedAll}}" bindtap='checkAll'></view>
+        <image class='has_shop_circlechecked' src='../../images/03gouwuche_gou.png' wx:else bindtap='checkAll'></image>
+        <text class='total_txt'>全选</text>
+      </view>
+      <view class='shop_total_right'>
+        <view class='shop_total_freight'>
+          <view class='position_total'>
+            <text class='total_name'>合计:</text>
+            <text class='total_name_num'>￥{{totalPrice}}</text>
+          </view>
+          <view class='position_total_freight'>
+            <text class='total_freight'>不含运费</text>
+          </view>
+        </view>
+        <view class='btn_detele_all_red' wx:if="{{isEdit}}" bindtap='goOrder'>结算</view>
+        <view class='btn_detele_all_red' wx:if="{{!isEdit}}" bindtap='deteleMore'>删除</view>
+      </view>
+    </view>
+  </view>
+</view>
+
