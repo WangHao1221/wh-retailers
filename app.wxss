@@ -57,13 +57,12 @@ page,
   background:rgba(255,255,255,1);
 }
 .has_shop_title{
-  position: fixed;
+  box-sizing: border-box;
   width: 100%;
   height: 100rpx;
   display: flex;
   align-items: center;
   border-bottom: 3rpx solid rgba(248,248,248,1);
-  z-index: 99;
 }
 .position_title{
   width: 650rpx;
@@ -285,6 +284,7 @@ page,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 30rpx;
 }
 .total_name{
   font-size: 28rpx;
@@ -310,9 +310,6 @@ page,
 }
 .position_total_freight{
   display: flex;
-}
-.shop_total_freight{
-  margin-right: 30rpx;
 }
 .btn_detele_all_red{
    width: 220rpx;

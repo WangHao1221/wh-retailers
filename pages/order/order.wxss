@@ -1,1 +1,65 @@
 /* pages/order/order.wxss */
+.container {
+  background:#eee;
+} 
+.no_addrss{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  margin-bottom: 20rpx;
+}
+.shop_list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #FFF;
+  margin-bottom: 120rpx;
+  align-items: center;
+}
+.shop_title{
+  width: 100%;
+  padding: 15rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.position_hasshop_item{
+  width: 90%;
+  border-bottom: 1px solid #eee;
+}
+.has_shop_icon1{
+  width: 40rpx;
+  height: 40rpx;
+  padding: 0 15rpx;
+}
+.menu_right_txt{
+  padding-bottom: 0;
+}
+.menu_right_count{
+  font-size: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(185,189,185,1);
+  padding-top: 14rpx;
+}
+.shop_car_total{
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  background-color: #FFF;
+  justify-content: flex-end;
+}
+.shop_total{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+}
+.total_txt{
+  color: #ccc;
+}

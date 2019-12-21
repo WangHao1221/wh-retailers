@@ -9,7 +9,7 @@ module.exports = {
     count: 0,//商品数量
     id: 0,//商品id
     selected: false,//商品是否为被选中状态，购物车默认全选
-    specifications: "500g"//商品规格
+    specifications: "500g/箱"//商品规格
   },
   {
     imgGood: "../../images/2.jpg",
@@ -20,7 +20,7 @@ module.exports = {
     count: 0,
     id: 1,
     selected: false,
-    specifications: "10个"
+    specifications: "10个/箱"
   },
   {
     imgGood: "../../images/3.jpg",
@@ -31,7 +31,7 @@ module.exports = {
     count: 0,
     id: 2,
     selected: false,
-    specifications: "10斤"
+    specifications: "10斤/箱"
     },
     {
       imgGood: "../../images/4.jpg",
@@ -42,7 +42,7 @@ module.exports = {
       count: 0,
       id: 3,
       selected: false,
-      specifications: "10斤"
+      specifications: "10斤/箱"
     },
     {
       imgGood: "../../images/5.jpg",
@@ -53,7 +53,7 @@ module.exports = {
       count: 0,
       id: 4,
       selected: false,
-      specifications: "10斤"
+      specifications: "10斤/箱"
     },
     {
       imgGood: "../../images/6.jpg",
@@ -64,7 +64,7 @@ module.exports = {
       count: 0,
       id: 5,
       selected: false,
-      specifications: "10斤"
+      specifications: "10斤/箱"
     },
     {
       imgGood: "../../images/7.jpg",
@@ -75,7 +75,7 @@ module.exports = {
       count: 0,
       id: 6,
       selected: false,
-      specifications: "10斤"
+      specifications: "10斤/箱"
     },
     {
       imgGood: "../../images/8.jpg",
@@ -86,7 +86,7 @@ module.exports = {
       count: 0,
       id: 7,
       selected: false,
-      specifications: "10斤"
+      specifications: "10斤/箱"
     },
     {
       imgGood: "../../images/9.jpg",
@@ -97,7 +97,7 @@ module.exports = {
       count: 0,
       id: 8,
       selected: false,
-      specifications: "10斤"
+      specifications: "10斤/箱"
     },
     {
       imgGood: "../../images/10.jpg",
@@ -108,6 +108,6 @@ module.exports = {
       count: 0,
       id: 9,
       selected: false,
-      specifications: "10斤"
+      specifications: "10斤/箱"
     }]
 }
