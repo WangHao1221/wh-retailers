@@ -312,7 +312,7 @@ page,
   display: flex;
 }
 .btn_detele_all_red{
-   width: 220rpx;
+  width: 220rpx;
   height: 100rpx;
   background:rgba(235,84,77,1);
   display: flex;
@@ -328,4 +328,61 @@ page,
   width: 32rpx;
   height: 32rpx;
   margin:0 30rpx 0 30rpx;
+}
+.no_addrss{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+}
+.divtest{
+    width: 14rpx;
+    height: 14rpx;
+    border-top: 4rpx solid rgb(128,128,128);
+    border-right: 4rpx solid rgb(128,128,128);
+    transform: rotate(45deg);
+}
+.shop_list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #FFF;
+  align-items: center;
+}
+/* 地址相关 */
+.wh_flex{
+  display: flex;
+  align-items: center;
+}
+.address_left{
+  max-width: calc(100% - 120rpx);
+}
+.nameAndTel{
+  padding:15rpx 0;
+}
+.name{
+  font-size: 1.3rem;
+  padding-right: 15rpx;
+}
+.tel,
+.address_right{
+  color: rgb(128 , 128 , 128);
+}
+.area{
+  font-size: 1.1rem;
+}
+.area_detail{
+  color: rgb(119,119,119);
+  padding:10rpx 0;
+}
+.isDefault{
+  color: #dac898;
+  border: 1px solid #e3a84a;
+  width: 100rpx;
+  font-size: 0.6rem;
+  padding: 5rpx 10rpx;
+  margin-right: 20rpx;
 }

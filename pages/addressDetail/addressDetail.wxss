@@ -1,0 +1,68 @@
+/* pages/addressDetail/addressDetail.wxss */
+.container{
+  background-color: rgb(246, 246, 246);
+}
+.position_hasshop_item{
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  height: 100rpx;
+  justify-content: space-between;
+}
+.md-top{
+  margin-top: 30rpx;
+  background-color: #FFF;
+}
+.info_value{
+  width: 100%;
+}
+.info_area{
+  height: 150rpx;
+}
+.info_area .info_value{
+  height: 100%;
+}
+.picker{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+.region_title{
+  width: 130rpx;
+  color: rgb(128,128,128);
+}
+.default_title{
+  color: #000;
+}
+.dele_title{
+  color: #F00;
+}
+.address_value{
+  width: calc(100% - 250rpx);
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.info_address{
+  width: 100%;
+  height: 100%;
+}
+.address_value_max{
+  width: calc(100% - 30rpx);
+}
+.no_addrss{
+  width: 120rpx;
+}
+.no_addrss_min{
+  width: 30rpx;
+}
+.no_addrss_title{
+  color: rgb(128,128,128);
+}
+.shop_car_total{
+  justify-content: center;
+  padding: 20rpx 0;
+}
+.btn_detele_all_red{
+  width: 90%;
+}

@@ -1,0 +1,26 @@
+/* pages/addressList/addressList.wxss */
+.shop_list{
+  margin-bottom: 120rpx;
+}
+.position_hasshop_item{
+  align-items: center;
+  justify-content: space-between;
+  padding: 15rpx 30rpx;
+}
+.address_split,
+.address_edit{
+  font-size: 1.1rem;
+}
+.address_split::after{
+  content:"|"; 
+  padding-right: 3px;
+  font-size: 2rem;
+  opacity: 0.4;
+}
+.shop_car_total{
+  justify-content: center;
+  bottom: 20rpx;
+}
+.btn_detele_all_red{
+  width: 90%;
+}

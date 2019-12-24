@@ -1,9 +1,24 @@
 <!--pages/order/order.wxml-->
 <view class="container">
-  <view class='no_addrss' wx:if="{{!addressIsShow}}">
-    您还没有添加收货地址，请先添加收货地址
+  <view class='no_addrss' wx:if="{{!addressIsShow}}" bindtap="choseAddress">
+    <span class="no_addrss_title">您还没有添加收货地址，请先添加收货地址</span>
+    <span class="divtest"></span>
   </view>
-  <view class='has_addrss' wx:if="{{addressIsShow}}">
+  <view class='has_addrss' wx:if="{{addressIsShow}}" bindtap="choseAddress">
+    <view class="address_left">
+      <view class="wh_flex nameAndTel">
+        <view class="isDefault" wx:if="{{showAddressItem.defaultChecked}}">默认地址</view>
+        <view class="name">{{showAddressItem.name}}</view>
+        <view class="tel">{{showAddressItem.tel}}</view>
+      </view>
+      <view class="area wh_flex">
+        <view class="area_detail">{{showAddressItem.address}}</view>
+      </view>
+      <view class="area_detail">{{showAddressItem.detailAddress}}</view>
+    </view> 
+    <view class="address_right wh_flex">
+      <span class="divtest"></span>
+    </view>
   </view>
   <view class="shop_list">
     <!-- 第一排 -->

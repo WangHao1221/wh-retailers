@@ -1,0 +1,29 @@
+<!--pages/addressList/addressList.wxml-->
+<view class="container">
+  <view class="shop_list">
+    <!-- 循环地址 -->
+    <block wx:key="key{{address_list_index}}" wx:for="{{addressData}}">
+      <view class='position_hasshop_item' data-index="{{index}}" bindtap="chosedAddress">
+         <view class="address_left">
+            <view class="wh_flex nameAndTel">
+              <view class="name">{{item.name}}</view>
+              <view class="tel">{{item.tel}}</view>
+            </view>
+            <view class="area wh_flex">
+              <view class="isDefault" wx:if="{{item.defaultChecked}}">默认地址</view>
+              <view class="area_detail">{{item.address}}</view>
+            </view>
+            <view class="area_detail">{{item.detailAddress}}</view>
+         </view> 
+         <view class="address_right wh_flex">
+          <view class="address_split"></view>
+          <view class="address_edit" catchtap="editAddress" data-index='{{index}}'>编辑</view>
+         </view>
+      </view>
+    </block>
+  </view>
+  <!-- 底部选择栏 -->
+  <view class='shop_car_total'>
+    <view class='btn_detele_all_red'  bindtap='toAddAddress'>＋添加收货地址</view>
+  </view>
+</view>

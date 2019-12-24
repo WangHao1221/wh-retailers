@@ -1,5 +1,4 @@
 // pages/ShoppingCart/ShoppingCart.js
-const API = require('../../API/API.js');
 
 Page({
 
@@ -279,7 +278,7 @@ Page({
                 nlist.push(list[i]);
               }
             }
-            API.orderinfo = nlist;//将订单的信息传给API.js
+            wx.setStorageSync('orderinfo', nlist)//将订单的信息缓存
             wx.navigateTo({
               url: '../order/order'
             })

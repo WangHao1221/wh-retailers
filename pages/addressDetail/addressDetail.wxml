@@ -1,0 +1,39 @@
+<!--pages/addressDetail/addressDetail.wxml-->
+<view class="container">
+  <view class="shop_list">
+    <view class='position_hasshop_item'>
+      <input type='text' class='info_value' placeholder='收货人' bindinput="nameInput" value="{{name}}"></input>
+    </view>
+    <view class='position_hasshop_item'>
+      <input type='number' class='info_value' placeholder='电话' value="{{tel}}" bindinput="telInput"></input>
+    </view>
+    <view class='position_hasshop_item'>
+      <picker mode="region" class="info_address" value="{{address}}" bindchange="bindRegionChange">
+        <view class="picker">
+          <text class="region_title" wx:if="{{address.length<=0}}">所在地区</text>
+          <text class="address_value {{address.length>0?'address_value_max':''}}">{{address}}</text>
+          <view class="no_addrss {{address.length>0?'no_addrss_min':''}}">
+            <span class="no_addrss_title" wx:if="{{address.length<=0}}">请选择</span>
+            <span class="divtest"></span>
+          </view>
+        </view>
+      </picker>
+    </view>
+    <view class='position_hasshop_item info_area'>
+      <textarea class='info_value' placeholder='街道、小区门牌等详细信息' bindinput="detailAddressInput" value="{{detailAddress}}"></textarea> 
+    </view>
+  </view>
+  <view class='position_hasshop_item md-top'>
+    <view class="default_title">设为默认地址</view>
+    <view class="switch-view">
+      <switch checked="{{defaultChecked}}" bindchange="defaultChange"/>
+    </view>
+  </view>
+  <view class='position_hasshop_item md-top' wx:if="{{detailItem}}" bindtap="deleAddress">
+    <view class="dele_title">删除收货地址</view>
+  </view>
+  <!-- 底部选择栏 -->
+  <view class='shop_car_total'>
+    <view class='btn_detele_all_red'  bindtap='toSave'>保存</view>
+  </view>
+</view>

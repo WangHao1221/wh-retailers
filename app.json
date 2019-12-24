@@ -4,7 +4,9 @@
     "pages/mine/mine",
     "pages/ShoppingCart/ShoppingCart",
     "pages/classification/classification",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/addressList/addressList",
+    "pages/addressDetail/addressDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -3,21 +3,29 @@
   background:#eee;
 } 
 .no_addrss{
-  width: 100%;
   height: 200rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20rpx;
+}
+.no_addrss_title{
+  margin-right: 20rpx;
+}
+.has_addrss{
   background-color: #FFF;
   margin-bottom: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx;
 }
 .shop_list{
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   background-color: #FFF;
   margin-bottom: 120rpx;
   align-items: center;
