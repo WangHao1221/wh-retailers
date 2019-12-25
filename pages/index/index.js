@@ -13,6 +13,9 @@ Page({
       // url: '../details/details'
     })
   },
+  toDetail: function (e){
+    console.log("详情");
+  },
   // 加入购物车
   addCart: function (e) {
     // 当前商品

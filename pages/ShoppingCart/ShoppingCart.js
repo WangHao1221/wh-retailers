@@ -214,9 +214,10 @@ Page({
                   // 调用金额渲染数据
                   _this.totalPrice();
                 }
-              } else {
               }
             }
+            // 更新缓存
+            wx.setStorageSync('goodsCar', list);
           }
         }
       })

@@ -7,6 +7,9 @@
   width: 300rpx;
   height: 300rpx; 
 }
+.has_shop_num{
+  padding-right: 60rpx;
+}
 .shop_img{
   width: 300rpx;
   height: 300rpx;
@@ -14,13 +17,4 @@
 /* 文字描述及价格 */
 .menu_right_txt{
   height: 300rpx;
-}
-
-/* 加入购物车 */
-.has_shop_num{
-  padding-right: 60rpx;
-}
-.btn_addCart{
-  width: 70rpx;
-  height: 70rpx;
 }

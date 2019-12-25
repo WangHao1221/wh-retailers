@@ -354,6 +354,7 @@ page,
 }
 /* 地址相关 */
 .wh_flex{
+  display: -webkit-flex; /*在webkit内核的浏览器上使用要加前缀*/
   display: flex;
   align-items: center;
 }
@@ -385,4 +386,15 @@ page,
   font-size: 0.6rem;
   padding: 5rpx 10rpx;
   margin-right: 20rpx;
+}
+/* 加入购物车 */
+.btn_addCart{
+  width: 70rpx;
+  height: 70rpx;
+}
+/* 暂无数据 */
+.nodata_text{
+  font-size: 14px;  
+  text-align: center;  
+  line-height: 40px;
 }

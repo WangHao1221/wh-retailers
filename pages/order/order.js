@@ -46,7 +46,8 @@ Page({
         showCancel: false
       })
     }else{
-      console.log('可以正常下单...');
+      console.log('可以正常下单...清除订单信息');
+      wx.removeStorageSync('orderinfo');
     }
   },
   /**

@@ -1,0 +1,31 @@
+<!--pages/classifyGoods/classifyGoods.wxml-->
+<view class="container">
+  <view class="nodata_text" wx:if="{{!isHavaChild}}">
+    <text>该分类暂无数据</text>
+  </view>
+  <view class="has_classify" wx:else>
+    <block wx:for="{{goodsList}}" wx:key="id">
+      <view class="position_hasshop_item" data-item="{{item}}" bindtap="toDetail">
+        <!-- 商品图片 -->
+        <image class='shop_img' src='{{item.imgGood}}'></image>
+        <!-- 商品名称和描述 -->
+        <text class='menu_right_name'>{{item.nameGood}}</text>
+        <text class='menu_right_nameDes'>{{item.nameDes}}</text>
+        <view class='menu_right_down'>
+          <view class="price_sale">
+            <!-- 商品最新价格 -->
+            <text class='menu_right_nprice'>¥{{item.npriceGood}}</text>
+            <!-- 已售 -->
+            <text class="isSale">已售{{item.isSale}}件</text>
+          </view>
+          <view class='has_shop_num'>
+            <!-- 分享 -->
+            <image class='btn_addCart' src='../../images/toShare.png' catchtap='toShare' data-item='{{item}}'></image>
+            <!-- 加入购物车 -->
+            <image class='btn_addCart' src='../../images/addCart.png' catchtap='addCart' data-item='{{item}}'></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

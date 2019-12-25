@@ -19,7 +19,7 @@
                 <text class='menu_right_oprice'>{{item.opriceGood}}</text>
                 <view class='has_shop_num'>
                   <!-- 加入购物车 -->
-                  <image class='btn_addCart' src='../../images/addCart.png' bindtap='addCart' data-item='{{item}}'></image>
+                  <image class='btn_addCart' src='../../images/addCart.png' catchtap='addCart' data-item='{{item}}'></image>
                 </view>
               </view>
             </view>

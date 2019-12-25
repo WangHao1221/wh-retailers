@@ -56,10 +56,10 @@
                         <text class='menu_right_oprice'>{{item.opriceGood}}</text>
                         <view class='has_shop_num'>
                           <!-- 商品数量减少按钮 -->
-                          <image class='btn_sub' src='../../images/jian.png' bindtap='subNum' data-index='{{index}}'></image>
+                          <image class='btn_sub' src='../../images/jian.png' catchtap='subNum' data-index='{{index}}'></image>
                           <text class='goods_num'>{{item.count}}</text>
                           <!-- 增加商品数量按钮 -->
-                          <image class='btn_add' src='../../images/jia.png' bindtap='addNum' data-index='{{index}}'></image>
+                          <image class='btn_add' src='../../images/jia.png' catchtap='addNum' data-index='{{index}}'></image>
                         </view>
                       </view>
                     </view>
