@@ -145,7 +145,6 @@ page,
 }
 .menu_right_txt{
   box-sizing: border-box;
-  flex: 1;
   height: 200rpx;
   padding: 30rpx 15rpx;  
   line-height:30rpx;
@@ -166,6 +165,7 @@ page,
   -webkit-line-clamp: 1;
   line-clamp: 1;
   -webkit-box-orient: vertical;
+  line-height: 40rpx;
 }
 .menu_right_nameDes{
   font-size: 28rpx;
@@ -190,13 +190,13 @@ page,
   justify-content: space-between;
 }
 .menu_right_nprice{
-  font-size:30rpx;
+  font-size:40rpx;
   font-family:PingFangSC-Regular;
   font-weight:400;
   color:rgba(214,70,60,1);
 }
 .menu_right_oprice{
-  font-size:20rpx;
+  font-size:26rpx;
   font-family:PingFangSC-Regular;
   font-weight:400;
   color:rgba(185,189,185,1);
@@ -238,12 +238,12 @@ page,
   align-items: center;
 }
 .btn_sub{
-  width: 28rpx;
-  height: 28rpx;
+  width: 32rpx;
+  height: 32rpx;
 }
 .btn_add{
-  width: 28rpx;
-  height: 28rpx;
+  width: 32rpx;
+  height: 32rpx;
 }
 .goods_num{
   font-size:32rpx;
@@ -386,6 +386,17 @@ page,
   font-size: 0.6rem;
   padding: 5rpx 10rpx;
   margin-right: 20rpx;
+}
+/* 价格，已售 */
+.price_sale{
+  display: flex;
+  flex-direction: column;
+}
+.isSale{
+  font-size: 24rpx;
+  color: rgba(51,51,51,.6);
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
 }
 /* 加入购物车 */
 .btn_addCart{

@@ -36,7 +36,9 @@
           <view class='menu_right_txt'>
             <!-- 商品名称和描述 -->
             <text class='menu_right_name'>{{item.nameGood}}</text>
-            <text class='menu_right_nameDes'>{{item.specifications}}</text>
+            <block wx:for="{{item.specifications}}" wx:key="guigeId" wx:for-item="guigeItem">
+              <text class='menu_right_nameDes' wx:if="{{item.selecteGuige === guigeItem.guigeId}}">{{guigeItem.guigeName}}</text>
+            </block>
             <view class='menu_right_down'>
               <!-- 商品最新价格 -->
               <text class='menu_right_nprice'>¥{{item.npriceGood}}</text>

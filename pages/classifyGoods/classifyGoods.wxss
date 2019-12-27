@@ -22,13 +22,3 @@
   -webkit-line-clamp: 1;
   line-clamp: 1;
 }
-.price_sale{
-  display: flex;
-  flex-direction: column;
-}
-.isSale{
-  font-size: 24rpx;
-  color: rgba(51,51,51,.6);
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-}

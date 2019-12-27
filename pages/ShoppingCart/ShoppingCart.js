@@ -53,7 +53,10 @@ Page({
   },
   // 商品详情
   toDetail: function (e) {
-    console.log("商品详情页");
+    let detailItem = JSON.stringify(e.currentTarget.dataset.item);
+    wx.navigateTo({
+      url: '../details/details?detailItem=' + encodeURIComponent(detailItem)
+    })
   },
 
   /**

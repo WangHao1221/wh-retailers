@@ -8,13 +8,15 @@ Page({
     goods: [], //商品列表
   },
   //事件处理函数
-  toDetail: function() {
+  toDetail: function (e) {
+    let detailItem = JSON.stringify(e.currentTarget.dataset.item);
     wx.navigateTo({
-      // url: '../details/details'
+      url: '../details/details?detailItem=' + encodeURIComponent(detailItem)
     })
   },
-  toDetail: function (e){
-    console.log("详情");
+  // 分享
+  toShare: function (e) {
+    console.log("分享");
   },
   // 加入购物车
   addCart: function (e) {
@@ -43,11 +45,15 @@ Page({
       }else{
         cuObj.count = 1;
         cuObj.selected = true;
+        // 默认规格
+        cuObj.selecteGuige = 1;
         goodsCarData.push(cuObj);
       }
     }else{
       cuObj.count = 1;
       cuObj.selected = true;
+      // 默认规格
+      cuObj.selecteGuige = 1;
       goodsCarData.push(cuObj);
     }
     try {

@@ -7,7 +7,8 @@
     "pages/order/order",
     "pages/addressList/addressList",
     "pages/addressDetail/addressDetail",
-    "pages/classifyGoods/classifyGoods"
+    "pages/classifyGoods/classifyGoods",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",

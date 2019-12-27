@@ -9,7 +9,42 @@ module.exports = {
     count: 0,//商品数量
     id: 0,//商品id
     selected: false,//商品是否为被选中状态，购物车默认全选
-    specifications: "500g/箱"//商品规格
+    specifications: [
+      {
+        guigeName: "500g随机搭配/箱",
+        guigeId: 1
+      }, 
+      {
+        guigeName: "促销享会员价 500元/3箱",
+        guigeId: 2
+      },
+      {
+        guigeName: "500g纯苹果/箱",
+        guigeId: 3
+      },
+      {
+        guigeName: "500g纯香蕉/箱",
+        guigeId: 4
+      },
+    ],//商品规格
+    imgUrls: [
+      {
+        url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+        type: 1
+      },
+      {
+        url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+        type: 0
+      },
+      {
+        url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+        type: 0
+      },
+      {
+        url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+        type: 0
+      }], //轮播
+    isSale: "1000+"
   },
   {
     imgGood: "../../images/2.jpg",
@@ -20,7 +55,28 @@ module.exports = {
     count: 0,
     id: 1,
     selected: false,
-    specifications: "10个/箱"
+    specifications: [{
+      guigeName: "500g/箱",
+      guigeId: 1
+    }],
+    imgUrls: [
+      {
+        url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+        type: 1
+      },
+      {
+        url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+        type: 0
+      },
+      {
+        url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+        type: 0
+      },
+      {
+        url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+        type: 0
+      }], //轮播
+    isSale: "3000+"
   },
   {
     imgGood: "../../images/3.jpg",
@@ -31,7 +87,28 @@ module.exports = {
     count: 0,
     id: 2,
     selected: false,
-    specifications: "10斤/箱"
+    specifications: [{
+      guigeName: "10斤/箱",
+      guigeId: 1
+    }],
+    imgUrls: [
+      {
+        url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+        type: 1
+      },
+      {
+        url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+        type: 0
+      },
+      {
+        url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+        type: 0
+      },
+      {
+        url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+        type: 0
+      }], //轮播
+    isSale: "100"
     },
     {
       imgGood: "../../images/4.jpg",
@@ -42,7 +119,28 @@ module.exports = {
       count: 0,
       id: 3,
       selected: false,
-      specifications: "10斤/箱"
+      specifications: [{
+        guigeName: "10斤/箱",
+        guigeId: 1
+      }],
+      imgUrls: [
+        {
+          url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+          type: 1
+        },
+        {
+          url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+          type: 0
+        },
+        {
+          url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+          type: 0
+        },
+        {
+          url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+          type: 0
+        }], //轮播
+      isSale: "88"
     },
     {
       imgGood: "../../images/5.jpg",
@@ -53,7 +151,28 @@ module.exports = {
       count: 0,
       id: 4,
       selected: false,
-      specifications: "10斤/箱"
+      specifications: [{
+        guigeName: "10斤/箱",
+        guigeId: 1
+      }],
+      imgUrls: [
+        {
+          url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+          type: 1
+        },
+        {
+          url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+          type: 0
+        },
+        {
+          url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+          type: 0
+        },
+        {
+          url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+          type: 0
+        }], //轮播
+      isSale: "67"
     },
     {
       imgGood: "../../images/6.jpg",
@@ -64,7 +183,28 @@ module.exports = {
       count: 0,
       id: 5,
       selected: false,
-      specifications: "10斤/箱"
+      specifications: [{
+        guigeName: "10斤/箱",
+        guigeId: 1
+      }],
+      imgUrls: [
+        {
+          url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+          type: 1
+        },
+        {
+          url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+          type: 0
+        },
+        {
+          url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+          type: 0
+        },
+        {
+          url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+          type: 0
+        }], //轮播
+      isSale: "55"
     },
     {
       imgGood: "../../images/7.jpg",
@@ -75,7 +215,28 @@ module.exports = {
       count: 0,
       id: 6,
       selected: false,
-      specifications: "10斤/箱"
+      specifications: [{
+        guigeName: "10斤/箱",
+        guigeId: 1
+      }],
+      imgUrls: [
+        {
+          url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+          type: 1
+        },
+        {
+          url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+          type: 0
+        },
+        {
+          url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+          type: 0
+        },
+        {
+          url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+          type: 0
+        }], //轮播
+      isSale: "47"
     },
     {
       imgGood: "../../images/8.jpg",
@@ -86,7 +247,28 @@ module.exports = {
       count: 0,
       id: 7,
       selected: false,
-      specifications: "10斤/箱"
+      specifications: [{
+        guigeName: "10斤/箱",
+        guigeId: 1
+      }],
+      imgUrls: [
+        {
+          url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+          type: 1
+        },
+        {
+          url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+          type: 0
+        },
+        {
+          url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+          type: 0
+        },
+        {
+          url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+          type: 0
+        }], //轮播
+      isSale: "36"
     },
     {
       imgGood: "../../images/9.jpg",
@@ -97,7 +279,28 @@ module.exports = {
       count: 0,
       id: 8,
       selected: false,
-      specifications: "10斤/箱"
+      specifications: [{
+        guigeName: "10斤/箱",
+        guigeId: 1
+      }],
+      imgUrls: [
+        {
+          url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+          type: 1
+        },
+        {
+          url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+          type: 0
+        },
+        {
+          url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+          type: 0
+        },
+        {
+          url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+          type: 0
+        }], //轮播
+      isSale: "18"
     },
     {
       imgGood: "../../images/10.jpg",
@@ -108,7 +311,28 @@ module.exports = {
       count: 0,
       id: 9,
       selected: false,
-      specifications: "10斤/箱"
+      specifications: [{
+        guigeName: "10斤/箱",
+        guigeId: 1
+      }],
+      imgUrls: [
+        {
+          url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+          type: 1
+        },
+        {
+          url: 'http://f.hiphotos.baidu.com/image/h%3D300/sign=d985fb87d81b0ef473e89e5eedc551a1/b151f8198618367aa7f3cc7424738bd4b31ce525.jpg',
+          type: 0
+        },
+        {
+          url: 'http://a.hiphotos.baidu.com/image/pic/item/f603918fa0ec08fa3139e00153ee3d6d55fbda5f.jpg',
+          type: 0
+        },
+        {
+          url: 'http://b.hiphotos.baidu.com/image/pic/item/0eb30f2442a7d9337119f7dba74bd11372f001e0.jpg',
+          type: 0
+        }], //轮播
+      isSale: "1"
     }],
     // 分类模拟数据
   cateItems: [
@@ -126,62 +350,192 @@ module.exports = {
             children: [
               {
                 id: 12,
-                imgUrls: ['https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3','https://img14.360buyimg.com/n4/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg', 'https://img11.360buyimg.com/n5/jfs/t17722/120/2679265136/83859/a186b11/5b063168N10107933.jpg','https://img11.360buyimg.com/n5/jfs/t20329/9/252098368/467543/7b5c4abc/5b06316cNe04ea3b9.jpg'], //轮播
+                imgUrls: [
+                  {
+                    url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+                    type: 1
+                  },
+                  {
+                    url: 'https://img14.360buyimg.com/n4/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg',
+                    type: 0
+                  }, 
+                  {
+                    url: 'https://img11.360buyimg.com/n5/jfs/t17722/120/2679265136/83859/a186b11/5b063168N10107933.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img11.360buyimg.com/n5/jfs/t20329/9/252098368/467543/7b5c4abc/5b06316cNe04ea3b9.jpg',
+                    type: 0
+                  }], //轮播
                 npriceGood: '1380',
                 opriceGood: '1699',
                 isSale: '121', //已售
                 nameGood: '小米电视4X 55英寸 4K超高清 HDR 蓝牙语音遥控 2GB+8GB 人工智能语音网络液晶平板电视L55M5-AD',
                 nameDes: '超清大屏',
-                imgGood: "https://img11.360buyimg.com/n7/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg"
+                imgGood: "https://img11.360buyimg.com/n7/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg",
+                specifications: [
+                  {
+                    guigeName: "55英寸 小米电视4X55",
+                    guigeId: 1
+                  }
+                ]
               },
               {
                 id: 13,
-                imgUrls: ['https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/7cac9f7b203885979634294785/v.f30.mp4?dockingId=0305b273-e13a-4256-8d63-1356a2f688bd&storageSource=3', 'https://img14.360buyimg.com/n4/jfs/t1/38532/2/6498/278498/5cd1545dEfaeec114/64ec5f1db6ba1651.jpg', 'https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg','https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg'], //轮播
+                imgUrls: [
+                  {
+                    url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/7cac9f7b203885979634294785/v.f30.mp4?dockingId=0305b273-e13a-4256-8d63-1356a2f688bd&storageSource=3',
+                    type: 1
+                  }, 
+                  {
+                    url: 'https://img14.360buyimg.com/n4/jfs/t1/38532/2/6498/278498/5cd1545dEfaeec114/64ec5f1db6ba1651.jpg',
+                    type: 0
+                  }, 
+                  {
+                    url: 'https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg',
+                    type: 0
+                  }], //轮播
                 npriceGood: '2180',
                 opriceGood: '2699',
                 isSale: '389', //已售
                 nameGood: '长虹 55D7P 55英寸无边全面屏 人工智能超薄全金属 4K超高清语音平板LED液晶电视机',
                 nameDes: 'LED液晶电视机',
-                imgGood: "https://img14.360buyimg.com/n1/s160x160_jfs/t1/26268/16/12814/150827/5c9b449aE33777846/edd4d4b39672ca75.jpg"
+                imgGood: "https://img14.360buyimg.com/n1/s160x160_jfs/t1/26268/16/12814/150827/5c9b449aE33777846/edd4d4b39672ca75.jpg",
+                specifications: [
+                  {
+                    guigeName: "55英寸 长虹55D7P",
+                    guigeId: 1
+                  }
+                ]
               },
               {
                 id: 14,
-                imgUrls: ['https://jdvideo.300hu.com/vodtransgzp1251412368/7447398156586530372/v.f30.mp4?dockingId=137c1c7a-ff58-4d90-b574-0f63a19cd1aa&storageSource=3', 'https://img13.360buyimg.com/n5/jfs/t1/107818/25/577/145060/5df641d1Ea1e17c24/15d8c3ebd5f073b0.jpg', 'https://img13.360buyimg.com/n5/jfs/t1/77433/23/463/201823/5cea9993E2f2ae73d/4831c96ef2c8b686.jpg','https://img13.360buyimg.com/n5/jfs/t1/33102/22/12279/151189/5cea9994E30612e2d/8abd11256311bea2.jpg'], //轮播
+                imgUrls: [
+                  {
+                    url: 'https://jdvideo.300hu.com/vodtransgzp1251412368/7447398156586530372/v.f30.mp4?dockingId=137c1c7a-ff58-4d90-b574-0f63a19cd1aa&storageSource=3',
+                    type: 1
+                  }, 
+                  {
+                    url: 'https://img13.360buyimg.com/n5/jfs/t1/107818/25/577/145060/5df641d1Ea1e17c24/15d8c3ebd5f073b0.jpg',
+                    type: 0
+                  }, 
+                  {
+                    url: 'https://img13.360buyimg.com/n5/jfs/t1/77433/23/463/201823/5cea9993E2f2ae73d/4831c96ef2c8b686.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img13.360buyimg.com/n5/jfs/t1/33102/22/12279/151189/5cea9994E30612e2d/8abd11256311bea2.jpg',
+                    type: 0
+                  }], //轮播
                 npriceGood: '1980',
                 opriceGood: '2399',
                 isSale: '299', //已售
                 nameGood: '康佳KKTV U65V5 65英寸 华为海思芯片 HDR 4K超高清 手机投屏 教育电视 人工智能语音网络液晶平板电视机',
                 nameDes: '人工智能语音网络液晶平板电视机',
-                imgGood: "https://img11.360buyimg.com/n5/jfs/t1/96791/4/6438/144867/5df36a03Ebf688e44/daa7489245cddd14.jpg"
+                imgGood: "https://img11.360buyimg.com/n5/jfs/t1/96791/4/6438/144867/5df36a03Ebf688e44/daa7489245cddd14.jpg",
+                specifications: [
+                  {
+                    guigeName: "65英寸 康佳KKTV",
+                    guigeId: 1
+                  }
+                ]
               }, {
                 id: 15,
-                imgUrls: ['https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3', 'https://img14.360buyimg.com/n4/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg', 'https://img11.360buyimg.com/n5/jfs/t17722/120/2679265136/83859/a186b11/5b063168N10107933.jpg', 'https://img11.360buyimg.com/n5/jfs/t20329/9/252098368/467543/7b5c4abc/5b06316cNe04ea3b9.jpg'], //轮播
+                imgUrls: [
+                  {
+                    url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/7cac9f7b203885979634294785/v.f30.mp4?dockingId=0305b273-e13a-4256-8d63-1356a2f688bd&storageSource=3',
+                    type: 1
+                  },
+                  {
+                    url: 'https://img14.360buyimg.com/n4/jfs/t1/38532/2/6498/278498/5cd1545dEfaeec114/64ec5f1db6ba1651.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg',
+                    type: 0
+                  }], //轮播
                 npriceGood: '1380',
                 opriceGood: '1699',
                 isSale: '121', //已售
                 nameGood: '小米电视4X 55英寸 4K超高清 HDR 蓝牙语音遥控 2GB+8GB 人工智能语音网络液晶平板电视L55M5-AD',
                 nameDes: '超清大屏',
-                imgGood: "https://img11.360buyimg.com/n7/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg"
+                imgGood: "https://img11.360buyimg.com/n7/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg",
+                specifications: [{
+                  guigeName: "65英寸 康佳KKTV",
+                  guigeId: 1
+                }]
               },
               {
                 id: 16,
-                imgUrls: ['https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/7cac9f7b203885979634294785/v.f30.mp4?dockingId=0305b273-e13a-4256-8d63-1356a2f688bd&storageSource=3', 'https://img14.360buyimg.com/n4/jfs/t1/38532/2/6498/278498/5cd1545dEfaeec114/64ec5f1db6ba1651.jpg', 'https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg', 'https://img14.360buyimg.com/n1/s160x160_jfs/t1/82505/33/6010/290354/5d415de6Efc0e5596/26bd50d7e30bf278.jpg'], //轮播
+                imgUrls: [
+                  {
+                    url: 'https://jdvideo.300hu.com/vodtransgzp1251412368/7447398156586530372/v.f30.mp4?dockingId=137c1c7a-ff58-4d90-b574-0f63a19cd1aa&storageSource=3',
+                    type: 1
+                  },
+                  {
+                    url: 'https://img13.360buyimg.com/n5/jfs/t1/107818/25/577/145060/5df641d1Ea1e17c24/15d8c3ebd5f073b0.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img13.360buyimg.com/n5/jfs/t1/77433/23/463/201823/5cea9993E2f2ae73d/4831c96ef2c8b686.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img13.360buyimg.com/n5/jfs/t1/33102/22/12279/151189/5cea9994E30612e2d/8abd11256311bea2.jpg',
+                    type: 0
+                  }], //轮播
                 npriceGood: '2180',
                 opriceGood: '2699',
                 isSale: '389', //已售
                 nameGood: '长虹 55D7P 55英寸无边全面屏 人工智能超薄全金属 4K超高清语音平板LED液晶电视机',
                 nameDes: 'LED液晶电视机',
-                imgGood: "https://img14.360buyimg.com/n1/s160x160_jfs/t1/26268/16/12814/150827/5c9b449aE33777846/edd4d4b39672ca75.jpg"
+                imgGood: "https://img14.360buyimg.com/n1/s160x160_jfs/t1/26268/16/12814/150827/5c9b449aE33777846/edd4d4b39672ca75.jpg",
+                specifications: [
+                  {
+                    guigeName: "65英寸 康佳KKTV",
+                    guigeId: 1
+                  }
+                ]
               },
               {
                 id: 17,
-                imgUrls: ['https://jdvideo.300hu.com/vodtransgzp1251412368/7447398156586530372/v.f30.mp4?dockingId=137c1c7a-ff58-4d90-b574-0f63a19cd1aa&storageSource=3', 'https://img13.360buyimg.com/n5/jfs/t1/107818/25/577/145060/5df641d1Ea1e17c24/15d8c3ebd5f073b0.jpg', 'https://img13.360buyimg.com/n5/jfs/t1/77433/23/463/201823/5cea9993E2f2ae73d/4831c96ef2c8b686.jpg', 'https://img13.360buyimg.com/n5/jfs/t1/33102/22/12279/151189/5cea9994E30612e2d/8abd11256311bea2.jpg'], //轮播
+                imgUrls: [
+                  {
+                    url: 'https://vod.300hu.com/4c1f7a6atransbjngwcloud1oss/31174044181056509244399617/v.f30.mp4?dockingId=c8456f2f-15b7-4cfd-9e49-26005a06bf64&storageSource=3',
+                    type: 1
+                  },
+                  {
+                    url: 'https://img14.360buyimg.com/n4/jfs/t1/40091/37/8022/347730/5cf29444E5e18cacf/d26cc10a08925d0d.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img11.360buyimg.com/n5/jfs/t17722/120/2679265136/83859/a186b11/5b063168N10107933.jpg',
+                    type: 0
+                  },
+                  {
+                    url: 'https://img11.360buyimg.com/n5/jfs/t20329/9/252098368/467543/7b5c4abc/5b06316cNe04ea3b9.jpg',
+                    type: 0
+                  }], //轮播
                 npriceGood: '1980',
                 opriceGood: '2399',
                 isSale: '299', //已售
                 nameGood: '康佳KKTV U65V5 65英寸 华为海思芯片 HDR 4K超高清 手机投屏 教育电视 人工智能语音网络液晶平板电视机',
                 nameDes: '人工智能语音网络液晶平板电视机',
-                imgGood: "https://img11.360buyimg.com/n5/jfs/t1/96791/4/6438/144867/5df36a03Ebf688e44/daa7489245cddd14.jpg"
+                imgGood: "https://img11.360buyimg.com/n5/jfs/t1/96791/4/6438/144867/5df36a03Ebf688e44/daa7489245cddd14.jpg",
+                specifications: [
+                  {
+                    guigeName: "65英寸 康佳KKTV",
+                    guigeId: 1
+                  }
+                ]
               }
             ]
           },

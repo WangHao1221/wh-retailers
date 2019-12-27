@@ -7,9 +7,6 @@
   width: 300rpx;
   height: 300rpx; 
 }
-.has_shop_num{
-  padding-right: 60rpx;
-}
 .shop_img{
   width: 300rpx;
   height: 300rpx;

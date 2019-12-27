@@ -1,0 +1,83 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+  <!-- banner -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" indicator-active-color="#f00" circular="true">
+    <block wx:for="{{detailItem.imgUrls}}" wx:key="id">
+      <swiper-item>
+        <video src="{{item.url}}" wx:if="{{item.type===1}}" controls="controls" class="swiper-item" enable-danmu danmu-btn binderror="videoErrorCallback" enable-play-gesture>
+        </video>
+        <image src="{{item.url}}" wx:else data-src="{{item.url}}" catchtap="previewImage" class="swiper-item"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='menu_right_txt'>
+    <view class='menu_right_down'>
+      <view class="price_item">
+        <!-- 商品最新价格 -->
+        <text class='menu_right_nprice'>¥{{detailItem.npriceGood}}</text>
+        <!-- 商品以往价格 -->
+        <text class='menu_right_oprice'>{{detailItem.opriceGood}}</text>
+        <text class="cuxiao">促销价</text>
+      </view>
+      <!-- 已售 -->
+      <text class="isSale">已售{{detailItem.isSale}}件</text>
+    </view>
+    <!-- 商品名称和描述 -->
+    <text class='menu_right_name'>{{detailItem.nameGood}}</text>
+    <text class='menu_right_nameDes'>{{detailItem.nameDes}}</text>
+  </view>
+  <!-- 底部选择栏 -->
+  <view class='shop_car_total'>
+    <view class='car_total_left' bindtap="toShopCart">
+      <text wx:if="{{cartCount > 0}}" class="cartCount">{{cartCount}}</text>
+      <view class="cart">
+        <image src="../../images/icon/cart.png"></image>
+        <text>购物车</text>
+      </view>
+    </view>
+    <view class='shop_total_right'>
+      <view class='btn_detele_all_red addtoCart' bindtap='addTo'>加入购物车</view>
+      <view class='btn_detele_all_red' bindtap='buyNow'>立即购买</view>
+    </view>
+  </view>
+</view>
+
+<view class="modals" wx:if="{{!hiddenModalStatus}}">
+  <!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" >
+  </view>
+  <!--弹出框内容  -->
+  <view animation="{{animationData}}" class="commodity_attr_box bottom-pos">
+    <view class="modal_item">
+      <view class="item_left">
+        <image class="item_left_img" src="{{detailItem.imgGood}}"></image>
+        <text class='menu_right_nprice item_left_price'>¥{{detailItem.npriceGood}}</text>
+        <text class="cuxiao item_left_cuxiao">促销价</text>
+      </view>
+      <view class="item_right">
+        <view class="close_icon" catchtap="hideModal">×</view>
+      </view>
+    </view>
+    <view class="modal_item modal_item_guige">
+      <text>规格</text>
+      <view class="guige_list">
+        <block wx:for="{{detailItem.specifications}}" wx:key="id">
+          <text class="guige_item {{guigeId===item.guigeId ? 'guige_item_cur' : ''}}" data-item="{{item}}" catchtap="choseGuige">{{item.guigeName}}</text>
+        </block>
+      </view>
+    </view>
+    <view class="modal_item">
+      <text>数量</text>
+      <view class='has_shop_num'>
+        <image class='btn_sub' src='../../images/jian.png' catchtap='subNum' data-index='{{index}}'></image>
+        <text class='goods_num'>{{currentCount}}</text>
+        <image class='btn_add' src='../../images/jia.png' catchtap='addNum' data-index='{{index}}'></image>
+      </view>
+    </view>
+    <!-- 底部选择栏 -->
+    <view class='shop_car_operate'>
+      <view class="btn_all_red {{isBuy?'':'btn_all_yellow'}}"  catchtap='isSure'>确定</view>
+    </view>
+  </view>
+</view>
+

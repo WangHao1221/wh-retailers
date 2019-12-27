@@ -8,8 +8,12 @@ Page({
     isHavaChild: false, //当前分类是否有商品
     goodsList: [], //当前分类商品集合
   },
+  // 详情
   toDetail: function (e) {
-    // 详情
+    let detailItem = JSON.stringify(e.currentTarget.dataset.item);
+    wx.navigateTo({
+      url: '../details/details?detailItem=' + encodeURIComponent(detailItem)
+    })
   },
   // 加入购物车
   addCart: function (e) {
@@ -38,11 +42,15 @@ Page({
       } else {
         cuObj.count = 1;
         cuObj.selected = true;
+        // 默认规格
+        cuObj.selecteGuige = 1;
         goodsCarData.push(cuObj);
       }
     } else {
       cuObj.count = 1;
       cuObj.selected = true;
+      // 默认规格
+      cuObj.selecteGuige = 1;
       goodsCarData.push(cuObj);
     }
     try {
@@ -69,7 +77,6 @@ Page({
   onLoad: function (options) {
     var details = decodeURIComponent(options.detailItem);
     let currentItem = JSON.parse(details);
-    console.log(currentItem);
     this.setData({
       isHavaChild: currentItem.ishaveChild,
       goodsList: currentItem.children
