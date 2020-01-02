@@ -1,34 +1,85 @@
 <!--pages/details/details.wxml-->
 <view class="container">
-  <!-- banner -->
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" indicator-active-color="#f00" circular="true">
-    <block wx:for="{{detailItem.imgUrls}}" wx:key="id">
-      <swiper-item>
-        <video src="{{item.url}}" wx:if="{{item.type===1}}" controls="controls" class="swiper-item" enable-danmu danmu-btn binderror="videoErrorCallback" enable-play-gesture>
-        </video>
-        <image src="{{item.url}}" wx:else data-src="{{item.url}}" catchtap="previewImage" class="swiper-item"></image>
-      </swiper-item>
-    </block>
-  </swiper>
-  <view class='menu_right_txt'>
-    <view class='menu_right_down'>
-      <view class="price_item">
-        <!-- 商品最新价格 -->
-        <text class='menu_right_nprice'>¥{{detailItem.npriceGood}}</text>
-        <!-- 商品以往价格 -->
-        <text class='menu_right_oprice'>{{detailItem.opriceGood}}</text>
-        <text class="cuxiao">促销价</text>
+  <scroll-view scroll-y="true" class="wh-scroll">
+    <!-- banner -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" indicator-active-color="#f00" circular="true">
+      <block wx:for="{{detailItem.imgUrls}}" wx:key="id">
+        <swiper-item>
+          <video src="{{item.url}}" wx:if="{{item.type===1}}" controls="controls" class="swiper-item" enable-danmu danmu-btn binderror="videoErrorCallback" enable-play-gesture>
+          </video>
+          <image src="{{item.url}}" wx:else data-src="{{item.url}}" catchtap="previewImage" class="swiper-item"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='menu_right_txt'>
+      <view class='menu_right_down'>
+        <view class="price_item">
+          <!-- 商品最新价格 -->
+          <text class='menu_right_nprice'>¥{{detailItem.npriceGood}}</text>
+          <!-- 商品以往价格 -->
+          <text class='menu_right_oprice'>{{detailItem.opriceGood}}</text>
+          <text class="cuxiao">促销价</text>
+        </view>
+        <!-- 已售 -->
+        <text class="isSale">已售{{detailItem.isSale}}件</text>
       </view>
-      <!-- 已售 -->
-      <text class="isSale">已售{{detailItem.isSale}}件</text>
+      <!-- 商品名称和描述 -->
+      <text class='menu_right_name'>{{detailItem.nameGood}}</text>
+      <text class='menu_right_nameDes'>{{detailItem.nameDes}}</text>
     </view>
-    <!-- 商品名称和描述 -->
-    <text class='menu_right_name'>{{detailItem.nameGood}}</text>
-    <text class='menu_right_nameDes'>{{detailItem.nameDes}}</text>
-  </view>
+    <view class="detail_item">
+      <label class="menu_right_nameDes">配送</label>
+      <text class="menu_right_name">24小时内发货，免运费</text>
+    </view>
+    <view class="detail_item">
+      <label class="menu_right_nameDes">限制</label>
+      <text class="menu_right_name">该商品不可使用红包</text>
+    </view>
+    <view class='detail_item evaluation'>
+      <view class="evaluation_all">
+        <label class="menu_right_name">商品评价</label>
+        <text class="menu_right_nameDes">查看全部 ⟩</text>
+      </view>
+      <view class="evaluation_item">
+        <view class="evaluation_item_left">
+          <view class="name_src">
+            <image src="https://img-blog.csdnimg.cn/20190918140037908.png"></image>
+            <text>张三</text>
+          </view>
+          <label class="menu_right_name">好评好评，真是太好了，五星好评!好评好评，真是太好了，五星好评!</label>
+        </view>
+        <view class="evaluation_item_right">
+          <text class="menu_right_nameDes">2019-12-01</text>
+        </view>
+      </view>
+    </view>
+    <view class="detail_item detail_item_segment">
+      <view class='titleSel' bindtap='titleClick' data-idx='0'>
+        <text class="{{0 == currentIndex ? 'titleSelect' : 'titleUnSelect'}}">图文详情</text>
+      </view>
+      <view class='titleSel' bindtap='titleClick' data-idx='1'>
+        <text class="{{1 == currentIndex ? 'titleSelect' : 'titleUnSelect'}} ">客服说明</text>
+      </view>
+    </view>
+    <view class="detail_item detail_item_kefu" wx:if="{{0 == currentIndex}}">
+      <image src="../../images/detail1.png" mode="widthFix"></image>
+      <image src="../../images/detail3.png" mode="widthFix"></image>
+      <image src="../../images/detail4.png" mode="widthFix"></image>
+      <image src="../../images/detail5.png" mode="widthFix"></image>
+    </view>
+    <view class="detail_item detail_item_kefu" wx:else>
+      <image src="../../images/kefu1.png" mode="widthFix"></image>
+      <image src="../../images/kefu2.png" mode="widthFix"></image>
+      <image src="../../images/kefu3.png" mode="widthFix"></image>
+    </view>
+  </scroll-view>
   <!-- 底部选择栏 -->
   <view class='shop_car_total'>
     <view class='car_total_left' bindtap="toShopCart">
+      <view class="cart">
+        <image src="../../images/icon/kefu.png"></image>
+        <text>客服</text>
+      </view>
       <text wx:if="{{cartCount > 0}}" class="cartCount">{{cartCount}}</text>
       <view class="cart">
         <image src="../../images/icon/cart.png"></image>

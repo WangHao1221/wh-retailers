@@ -10,6 +10,7 @@ Page({
     duration: 1000, //  滑动动画时长1s
     hiddenModalStatus: true, //底部弹出框
     currentCount: 1, //弹出框中默认的该商品数量
+    currentIndex: 0, //详情/客服对应的tab
   },
   videoErrorCallback: function (e) {
     console.log('视频错误信息:')
@@ -29,6 +30,13 @@ Page({
       current: current, // 当前显示图片的http链接  
       urls: urls // 需要预览的图片http链接列表  
     })
+  },
+  //用户点击tab时调用
+  titleClick: function (e) {
+      this.setData({
+        //拿到当前索引并动态改变
+        currentIndex: e.currentTarget.dataset.idx
+      })
   },
   // 点击了购物车
   toShopCart: function () {

@@ -2,7 +2,7 @@
 <view class="container">
   <view class='has_shop_list'>
       <!-- 循环商品列表 -->
-      <block wx:key="key{{goods_car_index}}" wx:for="{{goods}}">
+      <block wx:key="goods_car_index" wx:for="{{goods}}">
         <view class='position_hasshop_item' bindtap="toDetail" data-item="{{item}}">
           <view class='position_hasshop_img'>
             <!-- 商品图片 -->
