@@ -1,5 +1,5 @@
 // pages/addressList/addressList.js
-const API = require('../../API/API.js');
+const API = require('../../../API/API.js');
 
 Page({
 

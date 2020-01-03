@@ -43,7 +43,6 @@
                     <view class='position_hasshop_img'>
                       <!-- 商品图片 -->
                       <image class='shop_img' src='{{item.imgGood}}'></image>
-                      <image class='icon_vip' src='../../images/vip.png'></image>
                     </view>
                     <view class='menu_right_txt'>
                       <!-- 商品名称和描述 -->

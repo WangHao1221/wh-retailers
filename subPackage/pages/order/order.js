@@ -1,5 +1,5 @@
 // pages/order/order.js
-const API = require('../../API/API.js');
+const API = require('../../../API/API.js');
 Page({
 
   /**

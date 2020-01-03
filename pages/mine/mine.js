@@ -4,22 +4,20 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
-    hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({
-      // url: '../logs/logs'
+      // url: ''
     })
   },
   onLoad: function () {
     wx.setNavigationBarTitle({
       title: '我的'
     })
-    if (app.globalData.userInfo) {
+    if (Object.keys(app.globalData.userInfo).length !== 0) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
@@ -47,7 +45,6 @@ Page({
     }
   },
   getUserInfo: function (e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

@@ -24,7 +24,7 @@ Page({
   toDetail: function (e) {
     let detailItem = JSON.stringify(e.currentTarget.dataset.item);
     wx.navigateTo({
-      url: '../classifyGoods/classifyGoods?detailItem=' + encodeURIComponent(detailItem),
+      url: '../../subPackage/pages/classifyGoods/classifyGoods?detailItem=' + encodeURIComponent(detailItem),
     })
   },
 

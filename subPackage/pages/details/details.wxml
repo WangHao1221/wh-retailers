@@ -62,27 +62,27 @@
       </view>
     </view>
     <view class="detail_item detail_item_kefu" wx:if="{{0 == currentIndex}}">
-      <image src="../../images/detail1.png" mode="widthFix"></image>
-      <image src="../../images/detail3.png" mode="widthFix"></image>
-      <image src="../../images/detail4.png" mode="widthFix"></image>
-      <image src="../../images/detail5.png" mode="widthFix"></image>
+      <image src="https://img.alicdn.com/imgextra/i4/2200798463642/O1CN01Ufxzrs1cm508K0L7s_!!2200798463642.jpg" mode="widthFix"></image>
+      <image src="https://img.alicdn.com/imgextra/i3/2200798463642/O1CN01lSff6I1cm509uc58a_!!2200798463642.jpg" mode="widthFix"></image>
+      <image src="https://img.alicdn.com/imgextra/i3/2200798463642/O1CN01NOVe2m1cm50CyLrp5_!!2200798463642.jpg" mode="widthFix"></image>
+      <image src="https://img.alicdn.com/imgextra/i4/2200798463642/O1CN01cFRnGL1cm502Z9rHo_!!2200798463642.jpg" mode="widthFix"></image>
     </view>
     <view class="detail_item detail_item_kefu" wx:else>
-      <image src="../../images/kefu1.png" mode="widthFix"></image>
-      <image src="../../images/kefu2.png" mode="widthFix"></image>
-      <image src="../../images/kefu3.png" mode="widthFix"></image>
+      <image src="../../../images/kefu1.png" mode="widthFix"></image>
+      <image src="../../../images/kefu2.png" mode="widthFix"></image>
+      <image src="../../../images/kefu3.png" mode="widthFix"></image>
     </view>
   </scroll-view>
   <!-- 底部选择栏 -->
   <view class='shop_car_total'>
     <view class='car_total_left' bindtap="toShopCart">
       <view class="cart">
-        <image src="../../images/icon/kefu.png"></image>
+        <image src="../../../images/icon/kefu.png"></image>
         <text>客服</text>
       </view>
       <text wx:if="{{cartCount > 0}}" class="cartCount">{{cartCount}}</text>
       <view class="cart">
-        <image src="../../images/icon/cart.png"></image>
+        <image src="../../../images/icon/cart.png"></image>
         <text>购物车</text>
       </view>
     </view>
@@ -120,9 +120,9 @@
     <view class="modal_item">
       <text>数量</text>
       <view class='has_shop_num'>
-        <image class='btn_sub' src='../../images/jian.png' catchtap='subNum' data-index='{{index}}'></image>
+        <image class='btn_sub' src='../../../images/jian.png' catchtap='subNum' data-index='{{index}}'></image>
         <text class='goods_num'>{{currentCount}}</text>
-        <image class='btn_add' src='../../images/jia.png' catchtap='addNum' data-index='{{index}}'></image>
+        <image class='btn_add' src='../../../images/jia.png' catchtap='addNum' data-index='{{index}}'></image>
       </view>
     </view>
     <!-- 底部选择栏 -->

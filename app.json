@@ -3,12 +3,19 @@
     "pages/index/index",
     "pages/mine/mine",
     "pages/ShoppingCart/ShoppingCart",
-    "pages/classification/classification",
-    "pages/order/order",
-    "pages/addressList/addressList",
-    "pages/addressDetail/addressDetail",
-    "pages/classifyGoods/classifyGoods",
-    "pages/details/details"
+    "pages/classification/classification"
+  ],
+  "subpackages": [
+    {
+      "root": "subPackage",
+      "pages": [
+        "pages/details/details",
+        "pages/order/order",
+        "pages/addressList/addressList",
+        "pages/addressDetail/addressDetail",
+        "pages/classifyGoods/classifyGoods"
+      ]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",

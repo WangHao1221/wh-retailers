@@ -11,7 +11,7 @@ Page({
   toDetail: function (e) {
     let detailItem = JSON.stringify(e.currentTarget.dataset.item);
     wx.navigateTo({
-      url: '../details/details?detailItem=' + encodeURIComponent(detailItem)
+      url: '../../subPackage/pages/details/details?detailItem=' + encodeURIComponent(detailItem)
     })
   },
   // 分享

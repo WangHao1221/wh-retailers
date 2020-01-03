@@ -55,7 +55,7 @@ Page({
   toDetail: function (e) {
     let detailItem = JSON.stringify(e.currentTarget.dataset.item);
     wx.navigateTo({
-      url: '../details/details?detailItem=' + encodeURIComponent(detailItem)
+      url: '../../subPackage/pages/details/details?detailItem=' + encodeURIComponent(detailItem)
     })
   },
 
@@ -284,7 +284,7 @@ Page({
             }
             wx.setStorageSync('orderinfo', nlist)//将订单的信息缓存
             wx.navigateTo({
-              url: '../order/order'
+              url: '../../subPackage/pages/order/order'
             })
           } else {
           }

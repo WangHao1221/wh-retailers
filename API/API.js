@@ -1,7 +1,7 @@
 /*这里是模拟的接口返回数据*/
 module.exports = {
   goods: [{
-    imgGood: "../../images/1.jpg",//商品图片地址
+    imgGood: "http://aimg8.dlszyht.net.cn/module_pic_con/800_1500/1845135/5598/11195373_1551929870.jpg?x-oss-process=image/resize,m_lfit,w_360,h_240,limit_0",//商品图片地址
     nameGood: "生日节日访友水果礼篮.生日节日访友水果礼篮",//商品名称和描述
     nameDes: "送礼自用两相宜，一次订购两盒尊享包邮服务", //描述
     npriceGood: 239,//商品最新价格
@@ -47,7 +47,7 @@ module.exports = {
     isSale: "1000+"
   },
   {
-    imgGood: "../../images/2.jpg",
+    imgGood: "http://aimg8.dlszyht.net.cn/module_pic_con/800_1500/1845135/5598/11195404_1551929931.jpg?x-oss-process=image/resize,m_lfit,w_360,h_240,limit_0",
     nameGood: "有机苹果礼盒",
     nameDes: "精选好礼，个大味甜，还不赶紧下单", //描述
     npriceGood: 99,
@@ -79,7 +79,7 @@ module.exports = {
     isSale: "3000+"
   },
   {
-    imgGood: "../../images/3.jpg",
+    imgGood: "http://aimg8.dlszyht.net.cn/module/simplepicbackground/1701179/2782/5563760_1528092569.jpg?x-oss-process=image/resize,m_fixed,w_255,h_320,limit_0",
     nameGood: "孕妈礼盒",
     nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音.新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
     npriceGood: 36.9,
@@ -111,7 +111,7 @@ module.exports = {
     isSale: "100"
     },
     {
-      imgGood: "../../images/4.jpg",
+      imgGood: "http://aimg8.dlszyht.net.cn/module/simplepicbackground/1845135/5598/11195903_1551931008.gif?x-oss-process=image/resize,m_fixed,w_255,h_320,limit_0",
       nameGood: "心想事成礼盒",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 139,
@@ -143,7 +143,7 @@ module.exports = {
       isSale: "88"
     },
     {
-      imgGood: "../../images/5.jpg",
+      imgGood: "http://aimg8.dlszyht.net.cn/module/simplepicbackground/1845135/5598/11195910_1551931024.gif?x-oss-process=image/resize,m_fixed,w_255,h_320,limit_0",
       nameGood: "特级智利加力果",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 36,
@@ -175,7 +175,7 @@ module.exports = {
       isSale: "67"
     },
     {
-      imgGood: "../../images/6.jpg",
+      imgGood: "http://img10.360buyimg.com/babel/s150x150_jfs/t18877/40/319533497/486134/171c1d37/5a6aa298N0dd3473a.jpg!q80.webp",
       nameGood: "台湾红心芭乐",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 45,
@@ -207,7 +207,7 @@ module.exports = {
       isSale: "55"
     },
     {
-      imgGood: "../../images/7.jpg",
+      imgGood: "http://img12.360buyimg.com/babel/s150x150_jfs/t18223/6/229592867/547530/bb4ec612/5a6595afN4cbebc2e.jpg!q80.webp",
       nameGood: "越南红心火龙果",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 59,
@@ -239,7 +239,7 @@ module.exports = {
       isSale: "47"
     },
     {
-      imgGood: "../../images/8.jpg",
+      imgGood: "http://img13.360buyimg.com/babel/s150x150_jfs/t2605/152/4094328248/200600/37296076/57ab290aN34f76b37.jpg!q80.webp",
       nameGood: "新西兰佳沛阳光金奇异果王",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 69,
@@ -271,7 +271,7 @@ module.exports = {
       isSale: "36"
     },
     {
-      imgGood: "../../images/9.jpg",
+      imgGood: "http://img14.360buyimg.com/babel/s150x150_jfs/t20932/162/2420978168/97507/fa7120ee/5b57e142N1275ff69.jpg!q80.webp",
       nameGood: "美国车厘子28.2mm级",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 79,
@@ -303,7 +303,7 @@ module.exports = {
       isSale: "18"
     },
     {
-      imgGood: "../../images/10.jpg",
+      imgGood: "http://img10.360buyimg.com/babel/s150x150_jfs/t18214/360/2386198411/293049/11e5e4b1/5af25da3N8e3ececc.jpg!q80.webp",
       nameGood: "桂味荔枝",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 98,

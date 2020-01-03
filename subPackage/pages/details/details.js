@@ -41,7 +41,7 @@ Page({
   // 点击了购物车
   toShopCart: function () {
     wx.switchTab({
-      url: '../ShoppingCart/ShoppingCart',
+      url: '../../../pages/ShoppingCart/ShoppingCart',
     })
   },
   // 加入购物车
@@ -75,6 +75,7 @@ Page({
       let nlist = [];
       nlist.push(orderItem);
       wx.setStorageSync('orderinfo', nlist)//将订单的信息缓存
+      this.hideModal();
       wx.navigateTo({
         url: '../order/order'
       })
@@ -243,7 +244,6 @@ Page({
     })
     var details = decodeURIComponent(options.detailItem);
     let currentItem = JSON.parse(details);
-    console.log(currentItem);
     this.setData({
       detailItem: currentItem
     })

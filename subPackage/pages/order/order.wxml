@@ -23,7 +23,7 @@
   <view class="shop_list">
     <!-- 第一排 -->
     <view class='shop_title'>
-      <image class='has_shop_icon1' src='../../images/03gouwuche_icon_dianpu.png'></image>
+      <image class='has_shop_icon1' src='../../../images/03gouwuche_icon_dianpu.png'></image>
       <text class='has_shop_smalltxt'>喜来登超市(配送/自提)</text>
     </view>
     <!-- 循环商品列表 -->

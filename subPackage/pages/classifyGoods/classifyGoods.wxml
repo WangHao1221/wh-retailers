@@ -20,9 +20,9 @@
           </view>
           <view class='has_shop_num'>
             <!-- 分享 -->
-            <image class='btn_addCart' src='../../images/toShare.png' catchtap='toShare' data-item='{{item}}'></image>
+            <image class='btn_addCart' src='../../../images/toShare.png' catchtap='toShare' data-item='{{item}}'></image>
             <!-- 加入购物车 -->
-            <image class='btn_addCart' src='../../images/addCart.png' catchtap='addCart' data-item='{{item}}'></image>
+            <image class='btn_addCart' src='../../../images/addCart.png' catchtap='addCart' data-item='{{item}}'></image>
           </view>
         </view>
       </view>
