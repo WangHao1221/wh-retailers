@@ -1,1 +1,10 @@
-#准备用微信小程序结合原生JS实现电商平台模板，注：本项目仅供测试参考，如需转载请注明出处，违法必究！
+## 效果预览
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/1.png)
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/2.png)
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/3.png)
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/4.png)
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/5.png)
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/6.png)
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/7.png)
+![Image text](https://github.com/WangHao1221/wh-retailersImages/blob/master/img/8.png)
+# 微信小程序结合原生JS实现电商平台模板，注：本项目仅供测试参考，如需转载请注明出处，违法必究！
