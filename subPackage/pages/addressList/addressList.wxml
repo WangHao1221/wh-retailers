@@ -2,7 +2,7 @@
 <view class="container">
   <view class="shop_list">
     <!-- 循环地址 -->
-    <block wx:key="key{{address_list_index}}" wx:for="{{addressData}}">
+    <block wx:key="address_list_index" wx:for="{{addressData}}">
       <view class='position_hasshop_item' data-index="{{index}}" bindtap="chosedAddress">
          <view class="address_left">
             <view class="wh_flex nameAndTel">

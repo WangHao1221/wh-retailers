@@ -1,5 +1,5 @@
 /* pages/order/order.wxss */
-.container {
+.has_shop {
   background:#eee;
 } 
 .no_addrss{
@@ -21,14 +21,7 @@
   padding: 30rpx;
 }
 .shop_list{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #FFF;
   margin-bottom: 120rpx;
-  align-items: center;
 }
 .shop_title{
   width: 100%;

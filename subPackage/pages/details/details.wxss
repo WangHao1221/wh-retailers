@@ -13,6 +13,7 @@ swiper,
   height: 600rpx;
 }
 .menu_right_txt{
+  width: 100%;
   padding: 15rpx;
   background-color: #FFF;
 }

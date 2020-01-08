@@ -110,6 +110,7 @@ page,
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10rpx;
 }
 .has_shop_item{
   width: 100%;
@@ -145,6 +146,7 @@ page,
 }
 .menu_right_txt{
   box-sizing: border-box;
+  width: calc(100% - 200rpx);
   height: 200rpx;
   padding: 30rpx 15rpx;  
   line-height:30rpx;

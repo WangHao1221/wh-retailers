@@ -28,7 +28,7 @@
     <!-- 循环的商品列表 -->
     <view class='has_shop_list'>
       <!-- 循环商品列表 -->
-      <block wx:key="key{{goods_car_index}}" wx:for="{{goodsCar}}">
+      <block wx:key="goods_car_index" wx:for="{{goodsCar}}">
         <view class='has_shop_item' data-item='{{item}}' bindtap="toDetail">
           <movable-area class='movable'>
             <movable-view direction="horizontal" class='movable-view' out-of-bounds="true" damping="100" animation="true">

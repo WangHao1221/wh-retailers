@@ -175,7 +175,7 @@ module.exports = {
       isSale: "67"
     },
     {
-      imgGood: "http://img10.360buyimg.com/babel/s150x150_jfs/t18877/40/319533497/486134/171c1d37/5a6aa298N0dd3473a.jpg!q80.webp",
+      imgGood: "http://img10.360buyimg.com/babel/s150x150_jfs/t18877/40/319533497/486134/171c1d37/5a6aa298N0dd3473a.jpg",
       nameGood: "台湾红心芭乐",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 45,
@@ -207,7 +207,7 @@ module.exports = {
       isSale: "55"
     },
     {
-      imgGood: "http://img12.360buyimg.com/babel/s150x150_jfs/t18223/6/229592867/547530/bb4ec612/5a6595afN4cbebc2e.jpg!q80.webp",
+      imgGood: "http://img12.360buyimg.com/babel/s150x150_jfs/t18223/6/229592867/547530/bb4ec612/5a6595afN4cbebc2e.jpg",
       nameGood: "越南红心火龙果",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 59,
@@ -239,7 +239,7 @@ module.exports = {
       isSale: "47"
     },
     {
-      imgGood: "http://img13.360buyimg.com/babel/s150x150_jfs/t2605/152/4094328248/200600/37296076/57ab290aN34f76b37.jpg!q80.webp",
+      imgGood: "http://img13.360buyimg.com/babel/s150x150_jfs/t2605/152/4094328248/200600/37296076/57ab290aN34f76b37.jpg",
       nameGood: "新西兰佳沛阳光金奇异果王",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 69,
@@ -271,7 +271,7 @@ module.exports = {
       isSale: "36"
     },
     {
-      imgGood: "http://img14.360buyimg.com/babel/s150x150_jfs/t20932/162/2420978168/97507/fa7120ee/5b57e142N1275ff69.jpg!q80.webp",
+      imgGood: "http://img14.360buyimg.com/babel/s150x150_jfs/t20932/162/2420978168/97507/fa7120ee/5b57e142N1275ff69.jpg",
       nameGood: "美国车厘子28.2mm级",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 79,
@@ -303,7 +303,7 @@ module.exports = {
       isSale: "18"
     },
     {
-      imgGood: "http://img10.360buyimg.com/babel/s150x150_jfs/t18214/360/2386198411/293049/11e5e4b1/5af25da3N8e3ececc.jpg!q80.webp",
+      imgGood: "http://img10.360buyimg.com/babel/s150x150_jfs/t18214/360/2386198411/293049/11e5e4b1/5af25da3N8e3ececc.jpg",
       nameGood: "桂味荔枝",
       nameDes: "新鲜的猕猴桃、火龙果、多汁的鲜橙，精美搭配，孕妈的福音", //描述
       npriceGood: 98,
@@ -575,7 +575,7 @@ module.exports = {
           {
             id: 24,
             nameGood: '尿裤湿巾',
-            imgGood: "https://img14.360buyimg.com/cms/jfs/t21259/170/2032614139/13216/fa60258a/5b431bc6N32cdc094.jpg!q80.webp"
+            imgGood: "https://img14.360buyimg.com/cms/jfs/t21259/170/2032614139/13216/fa60258a/5b431bc6N32cdc094.jpg"
           },
           {
             id: 25,
@@ -615,12 +615,12 @@ module.exports = {
           {
             id: 32,
             nameGood: '成长推荐',
-            imgGood: "https://img12.360buyimg.com/n2/jfs/t1/71195/25/104/194621/5ce21c66Ea85bd43b/ee3d4b5509a149b1.jpg!q80.webp"
+            imgGood: "https://img12.360buyimg.com/n2/jfs/t1/71195/25/104/194621/5ce21c66Ea85bd43b/ee3d4b5509a149b1.jpg"
           },
           {
             id: 33,
             nameGood: '今日大牌',
-            imgGood: "https://img14.360buyimg.com/n2/jfs/t14416/12/2313133636/123012/1ef8c961/5a9385cdNe4e4388c.jpg!q80.webp"
+            imgGood: "https://img14.360buyimg.com/n2/jfs/t14416/12/2313133636/123012/1ef8c961/5a9385cdNe4e4388c.jpg"
           },
           {
             id: 34,

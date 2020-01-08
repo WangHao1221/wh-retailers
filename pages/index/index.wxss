@@ -13,5 +13,6 @@
 }
 /* 文字描述及价格 */
 .menu_right_txt{
+  width: calc(100% - 300rpx);
   height: 300rpx;
 }

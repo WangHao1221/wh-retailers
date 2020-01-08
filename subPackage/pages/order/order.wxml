@@ -1,63 +1,67 @@
 <!--pages/order/order.wxml-->
 <view class="container">
-  <view class='no_addrss' wx:if="{{!addressIsShow}}" bindtap="choseAddress">
-    <span class="no_addrss_title">您还没有添加收货地址，请先添加收货地址</span>
-    <span class="divtest"></span>
-  </view>
-  <view class='has_addrss' wx:if="{{addressIsShow}}" bindtap="choseAddress">
-    <view class="address_left">
-      <view class="wh_flex nameAndTel">
-        <view class="isDefault" wx:if="{{showAddressItem.defaultChecked}}">默认地址</view>
-        <view class="name">{{showAddressItem.name}}</view>
-        <view class="tel">{{showAddressItem.tel}}</view>
-      </view>
-      <view class="area wh_flex">
-        <view class="area_detail">{{showAddressItem.address}}</view>
-      </view>
-      <view class="area_detail">{{showAddressItem.detailAddress}}</view>
-    </view> 
-    <view class="address_right wh_flex">
+  <view class="has_shop">
+    <!-- 地址选择栏 -->
+    <view class='no_addrss' wx:if="{{!addressIsShow}}" bindtap="choseAddress">
+      <span class="no_addrss_title">您还没有添加收货地址，请先添加收货地址</span>
       <span class="divtest"></span>
     </view>
-  </view>
-  <view class="shop_list">
-    <!-- 第一排 -->
-    <view class='shop_title'>
-      <image class='has_shop_icon1' src='../../../images/03gouwuche_icon_dianpu.png'></image>
-      <text class='has_shop_smalltxt'>喜来登超市(配送/自提)</text>
-    </view>
-    <!-- 循环商品列表 -->
-    <block wx:key="key{{goods_car_index}}" wx:for="{{goods}}">
-      <view class='position_hasshop_item'>
-          <view class='position_hasshop_img'>
-            <!-- 商品图片 -->
-            <image class='shop_img' src='{{item.imgGood}}'></image>
-          </view>
-          <view class='menu_right_txt'>
-            <!-- 商品名称和描述 -->
-            <text class='menu_right_name'>{{item.nameGood}}</text>
-            <block wx:for="{{item.specifications}}" wx:key="guigeId" wx:for-item="guigeItem">
-              <text class='menu_right_nameDes' wx:if="{{item.selecteGuige === guigeItem.guigeId}}">{{guigeItem.guigeName}}</text>
-            </block>
-            <view class='menu_right_down'>
-              <!-- 商品最新价格 -->
-              <text class='menu_right_nprice'>¥{{item.npriceGood}}</text>
-              <!-- 数量 -->
-              <text class='menu_right_count'>X{{item.count}}</text>
-            </view>
-          </view>
+    <view class='has_addrss' wx:if="{{addressIsShow}}" bindtap="choseAddress">
+      <view class="address_left">
+        <view class="wh_flex nameAndTel">
+          <view class="isDefault" wx:if="{{showAddressItem.defaultChecked}}">默认地址</view>
+          <view class="name">{{showAddressItem.name}}</view>
+          <view class="tel">{{showAddressItem.tel}}</view>
         </view>
-    </block>
-  </view>
-  <!-- 底部选择栏 -->
-  <view class='shop_car_total'>
-    <view class='shop_total'>
-      <text class='total_txt'>共{{totalCount}}件，</text>
-      <view class='position_total'>
-        <text class='total_name'>合计:</text>
-        <text class='total_name_num'>￥{{totalPrice}}</text>
+        <view class="area wh_flex">
+          <view class="area_detail">{{showAddressItem.address}}</view>
+        </view>
+        <view class="area_detail">{{showAddressItem.detailAddress}}</view>
+      </view> 
+      <view class="address_right wh_flex">
+        <span class="divtest"></span>
       </view>
     </view>
-    <view class='btn_detele_all_red'  bindtap='toPay'>提交订单</view>
+    <!-- 订单列表栏 -->
+    <view class="shop_list">
+      <!-- 第一排 -->
+      <view class='shop_title'>
+        <image class='has_shop_icon1' src='../../../images/03gouwuche_icon_dianpu.png'></image>
+        <text class='has_shop_smalltxt'>喜来登超市(配送/自提)</text>
+      </view>
+      <!-- 循环商品列表 -->
+      <block wx:key="goods_car_index" wx:for="{{goods}}">
+        <view class='position_hasshop_item'>
+            <view class='position_hasshop_img'>
+              <!-- 商品图片 -->
+              <image class='shop_img' src='{{item.imgGood}}'></image>
+            </view>
+            <view class='menu_right_txt'>
+              <!-- 商品名称和描述 -->
+              <text class='menu_right_name'>{{item.nameGood}}</text>
+              <block wx:for="{{item.specifications}}" wx:key="guigeId" wx:for-item="guigeItem">
+                <text class='menu_right_nameDes' wx:if="{{item.selecteGuige === guigeItem.guigeId}}">{{guigeItem.guigeName}}</text>
+              </block>
+              <view class='menu_right_down'>
+                <!-- 商品最新价格 -->
+                <text class='menu_right_nprice'>¥{{item.npriceGood}}</text>
+                <!-- 数量 -->
+                <text class='menu_right_count'>X{{item.count}}</text>
+              </view>
+            </view>
+          </view>
+      </block>
+    </view>
+    <!-- 底部选择栏 -->
+    <view class='shop_car_total'>
+      <view class='shop_total'>
+        <text class='total_txt'>共{{totalCount}}件，</text>
+        <view class='position_total'>
+          <text class='total_name'>合计:</text>
+          <text class='total_name_num'>￥{{totalPrice}}</text>
+        </view>
+      </view>
+      <view class='btn_detele_all_red'  bindtap='toPay'>提交订单</view>
+    </view>
   </view>
 </view>
